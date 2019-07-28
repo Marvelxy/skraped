@@ -1,0 +1,13 @@
+{
+  "name": "weatherapp",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.4",
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}
