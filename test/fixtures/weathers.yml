@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  panel_header: MyString
+  panel_header_title: MyString
+  coordinates: MyString
+  current_conditions_summary: MyString
+  current_conditions_details: MyString
+  detailed_forcast: MyText
+
+two:
+  panel_header: MyString
+  panel_header_title: MyString
+  coordinates: MyString
+  current_conditions_summary: MyString
+  current_conditions_details: MyString
+  detailed_forcast: MyText
