@@ -12,8 +12,31 @@ console.log('Hello World from Webpacker')
 import Turbolinks from 'turbolinks'
 import 'jquery/src/jquery'
 import Rails from 'rails-ujs'
-import 'semanti-ui/dist/semantic.min.css'
-import 'bootstrap/dist/js/semantic.min.js'
+import 'semantic-ui/dist/semantic.min.css'
+import 'semantic-ui/dist/semantic.min.js'
 
 Turbolinks.start();
 Rails.start();
+
+
+$(document).ready(function() {
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function() {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function() {
+            $('.fixed.menu').transition('fade out');
+          }
+        })
+      ;
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item')
+      ;
+
+    });
